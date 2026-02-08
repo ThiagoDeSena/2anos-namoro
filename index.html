@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta charset="UTF-8">
+	<title>First anniversary of love</title>
+	<link rel="stylesheet" type="text/css" href="./css/format.css">
+</head>
+
+<body style="margin:0px">
+	<audio autoplay loop>
+		<source src="music/Eles_Se_Amam.mp3" type="audio/mpeg">
+		Your browser does not support the audio.
+	</audio>
+	<canvas></canvas>
+	<div id="imgTxt">
+		<span id="Txt"></span> <br />
+		<span id="tmp"></span>
+		<img id="img" src="">
+		<!-- <video id="myVideo" width="100%" muted playsinline style="display:none; border-radius:15px;"></video> -->
+	</div>
+	<div id="videoContainer" style="display:none; position:absolute; top:25%; width:100%; text-align:center;">
+		<video id="myVideo" width="90%" muted playsinline
+			style="border-radius:15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);"></video>
+	</div>
+	<div id="heartTxt">
+		<span id="clickMe">Clique Aqui!</span>
+		<div id="heart">
+			<button id="button" onclick="play()"></button>
+		</div>
+	</div>
+	<div id="content">
+		<h2 id="together">Estamos juntos há</h2>
+		<div id="timer">
+			<b id="d"></b> Dias
+			<b id="h"></b> Horas
+			<b id="m"></b> Minutos
+			<b id="s"></b> Segundos
+		</div>
+	</div>
+
+	<div id="typeDiv">
+		<span id="txt1"></span> <br />
+		<span id="txt2"></span>
+	</div>
+
+	<script>
+		var ok = 0;
+		var flag = 1;
+		var myImage = document.getElementById("img");
+		var myTxt = document.getElementById("Txt");
+		var imageArray = ["pic/pacatubapesk.jpg", "pic/pedido.jpeg", "pic/inicio.jpeg", "pic/acai.jpg", "pic/acai (3).jpg", "pic/acai (2).jpg",
+			"pic/shoope.jpg", "pic/praia.jpeg", "pic/ilhasbelas1.jpeg", "pic/pitaguary.jpeg", "pic/interior.jpg", "pic/interior.jpeg", "pic/interior (3).jpg",
+			"pic/interior (2).jpg", "pic/desenho.jpeg", "pic/canoa.jpg", "pic/so macarrao.jpeg", "pic/so macarrao1.jpeg",
+			"pic/so macarrao1.jpeg", "pic/beiramar.jpg", "pic/beiramar.jpeg", "pic/beiramar (3).jpg", "pic/beiramar (2).jpg",
+			"pic/praia.jpg", "pic/praia (3).jpg", "pic/praia (2).jpg", "pic/pitaguary1.jpeg", "pic/nos (3).jpeg",
+			"pic/natureza.jpg", "pic/nos.jpg", "pic/nos.jpeg", "pic/nos (10).jpeg", "pic/nos (5).jpeg",
+			"pic/nos (4).jpeg", "pic/nos (2).jpeg", "pic/nos (11).jpeg", "pic/nos (9).jpeg", "pic/nos (6).jpeg",
+			"pic/inicio2.jpeg", "pic/ilhasbelas.jpeg", "pic/ilhasbelas2.jpeg", "pic/aracati.jpg", "pic/nos (7).jpeg"
+		];
+		var imageIndex = 0;
+		var txtArray = [
+			"Olá, meu amor! Preparei uma surpresa...",
+			"Aqui foi quando tudo começou, lembra?",
+			"Nossa primeira foto de Apaixonados :)",
+			"Cada momento ao seu lado é especial.",
+			"Tomando açaí",
+			"Lembra que o nosso primeiro beijo foi sabor açai ?",
+			"Dois anos de muitas risadas e aventuras.",
+			"Nas praias com nossos mergulhos",
+			"Na natureza das serras e matos...",
+			"No pô do sol no Pitaguary",
+			"No interior...",
+			"Aliás, amo ir com vc pro interior ♥",
+			"Mais interior com vc ♥",
+			"Minha Gatinha",
+			"Amo assistir desenhos com vc :)",
+			"Pô do sol em Canoa(no interior)",
+			"No só Macarrão com minha Princesa...",
+			"Mesmo gostando mais de Pastel...",
+			"amo comer macarronada com vc",
+			"Agora a prova meu bem...",
+			"Os sabádos no pô do sol...",
+			"Na beira mar...",
+			"Com a minha princesa",
+			"Tá vendo meu bem ♥",
+			"Na praia novamente",
+			"Como eu amo li ver de biquini",
+			"Pô do sol no Pitaguary de novo...",
+			"No sabádo a tarde",
+			"Ou no Pacatuba Pesk",
+			"Minha companheira...",
+			"Em todos os momentos.",
+			"Pra igreja",
+			"Pros casamentos",
+			"Pros jantares",
+			"Pras saídas de noite",
+			"Pros baiões",
+			"Pro Milk shake",
+			"Pra vida toda....",
+			" ",
+			" ",
+			"Te amo muito",
+			"muito muito muito",
+			"Amor da minha vida Toda♥."
+		];
+		var len = imageArray.length;
+		var t = 0;
+	</script>
+
+	<script type="text/javascript" src="./js/stars.js"></script>
+	<script type="text/javascript" src="./js/typeWriter.js"></script>
+	<script type="text/javascript" src="./js/date.js"></script>
+	<script type="text/javascript" src="./js/playImg.js"></script>
+
+	<div id="marriageProposal"
+		style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); width:100%; text-align:center; z-index:9999;">
+		<h1 id="proposalText">Sam, quer casar comigo?</h1>
+	</div>
+</body>
+
+</html>

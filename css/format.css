@@ -1,0 +1,185 @@
+#typeDiv {
+	position: absolute;
+	top: 45%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+}
+
+#txt1 {
+	font-size: 16px;
+	text-align: center;
+	color: white;
+}
+#txt2 {
+	font-size: 16px;
+	text-align: center;
+	color: white;
+}
+
+#content{
+	position: absolute;
+	top: 1%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 20%;
+}
+
+#together{
+	font-size: 25px;
+	text-align: center;
+	color: white;
+}
+
+#timer{
+	text-align: center;
+	color: white;
+}
+
+#d{
+	font-size: 19px;
+}
+
+#h{
+	font-size: 19px;
+}
+
+#m{
+	font-size: 19px;
+}
+
+#s{
+	font-size: 19px;
+}
+
+#heartTxt{
+	position: absolute;
+	display: table;
+	vertical-align: middle;
+	top: 80%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 10%;
+	height: 8%;
+}
+
+#clickMe{
+	display: inline-block;
+	font-size: 16px;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+#heart{
+	width: 100%;
+	height: 100%;
+}
+
+#button{
+	background-image: url("../pic/love.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	background-position: center;
+	transition: 0.1s;
+	width: 100%;
+	height: 100%;
+
+}
+
+#button:active {
+	width: 92%;
+	height: 92%;
+}
+
+/* Container que envolve a imagem e o texto */
+#imgTxt {
+    position: absolute;
+    display: flex; /* Mudamos para flex para alinhar melhor */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+    left: 5%;  /* Pequena margem nas laterais */
+    right: 5%;
+    margin: auto;
+    width: 90%; /* Ocupa quase toda a largura em telas pequenas */
+    height: 50%;
+    text-align: center;
+}
+
+/* Ajuste da Imagem para ser Responsiva */
+#img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;    /* Impede que a foto escape da largura da tela */
+    max-height: 80%;    /* Garante que sobre espaço para o texto abaixo */
+    width: auto;        /* Mantém a proporção original da largura */
+    height: auto;       /* Mantém a proporção original da altura */
+    border: 4px solid white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    object-fit: contain; /* Garante que a imagem inteira apareça no espaço */
+}
+
+/* Ajuste das legendas abaixo da foto */
+#Txt {
+    display: block;
+    font-size: 1.1rem; /* Tamanho adaptável */
+    width: 100%;
+    margin-top: 15px;
+    color: white;
+    font-weight: 500;
+}
+
+#tmp{
+	display: inline-block;
+	font-size: 17px;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+#myVideo {
+    max-width: 100%;
+    max-height: 80vh; /* Garante que não ultrapasse a altura da tela */
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    border: 4px solid white;
+}
+
+#videoContainer video {
+    max-height: 50vh; /* Ocupa no máximo metade da altura da tela */
+    object-fit: contain;
+}
+
+#proposalText {
+    font-family: 'Dancing Script', cursive; /* A mesma fonte romântica de antes */
+    font-size: 3.5rem;
+    color: #b91d1d; /* Aquele vermelho paixão */
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8), 2px 2px 5px rgba(0,0,0,0.2);
+    animation: fadeIn 3s ease-in; /* Aparece suavemente em 3 segundos */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Ajuste para mobile */
+@media (max-width: 600px) {
+    #proposalText {
+        font-size: 2.2rem;
+        padding: 0 20px;
+    }
+}
