@@ -68,6 +68,10 @@ function showImage(){
 }
 
 function play(){
+
+    var audio = document.querySelector("audio");
+    audio.play(); // Isso força a música a começar no clique do coração
+    
     if(t == 0){
         myImage.setAttribute("src", "");
         myTxt.innerHTML = "";
